@@ -9,10 +9,10 @@ function readyEventListeners() {
   function generateProjectHTML() {
     return `<h2>My Projects</h2>
       <h4>Quiz App</h4>
-      <img src="C:\Users\evanp\projects\Portfolio-Page\images\Quiz-App-Screenshot 2019-11-19 23.55.29.png" height="300" width="400"><br>
-      <img src="C:\Users\evanp\projects\Portfolio-Page\images\HTML5_Logo_512.png" height="25" width="25">
-      <img src="C:\Users\evanp\projects\Portfolio-Page\images\CSS3_logo_and_wordmark.svg.png" height="25" width="25">
-      <img src="C:\Users\evanp\projects\Portfolio-Page\images\jSLogo.jpg" height="25" width="25">
+      <img src="./images/Quiz-App-Screenshot 2019-11-19 23.55.29.png" height="300" width="400"><br>
+      <i class="fab fa-html5"></i>
+      <img src="./images/CSS3_logo_and_wordmark.svg.png" height="25" width="25">
+      <img src="./images/jSLogo.jpg" height="25" width="25">
       <h5>A series of 5, multiple choice questions centered around working out. Score and question number are calculated and displayed automatically, with rendered feedback for each answer submitted. </h5>`
   }
   
@@ -21,7 +21,7 @@ function readyEventListeners() {
   }
   
   function handleProjectButtonClick () {
-    $('.projects-button').on('click', function (event) {
+    $('body').on('click', '.projects-button', function (event) {
       event.preventDefault();
       renderProjectHTML();
     });
