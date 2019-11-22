@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
+      <a name="top"></a>
       <nav role="navigation">
       <ul>
-        <li class="bio-button">Bio</li>
-        <li class="projects-button">Projects</li>
-        <li class="contact-button">Contact Me</li>
+        <li class="bio-button" tabindex="1">Bio</li>
+        <li class="projects-button" tabindex="2">Projects</li>
+        <li class="contact-button" tabindex="3">Contact Me</li>
       </ul>
       </nav>
     </header>
     <main class="container">
       <h2>Hi, I'm Evan!
       </h2>
-      <p>I enjoy video games, fitness, and coding. I strive constantly for efficiency, optimization, and have a laser-like focus when it comes to solving a problem. I thrive in environments where I can learn from others, and share my knowledge. Feel free to browse my projects and contact me!
+      <p class="bio">I enjoy video games, fitness, and coding. I strive constantly for efficiency, optimization, and have a laser-like focus when it comes to solving a problem. I thrive in environments where I can learn from others, and share my knowledge. Feel free to browse my projects and contact me!
       </p>
-      <form>
+      <form class="submit-buttons">
         <input type="submit" class="projects-button" value="Projects">
         <input type="submit" class="contact-button" value="Contact Me">
       </form>
     </main>
-    <footer>Footer
+    <footer>
+      <a href="#top">To Top</a>
       </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
