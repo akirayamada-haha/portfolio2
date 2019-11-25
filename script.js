@@ -36,10 +36,10 @@ function generateContactHTML() {
   return `<h3>Contact Information</h3>
     <ul>
       <li>Evan Poe</li>
-      <li>evanpoe91@yahoo.com</li>
-      <li><a href="https://www.linkedin.com/in/evan-poe-016375a5/"><i class="fab fa-linkedin"></i>
+      <li><a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">evanpoe91@yahoo.com</a></li>
+      <li><a href="https://www.linkedin.com/in/evan-poe-016375a5/" target="_blank"><i class="fab fa-linkedin"></i>
       </a></li>
-      <li><a href="https://github.com/EvanPoe"><i class="fab fa-github"></i>
+      <li><a href="https://github.com/EvanPoe" target="_blank"><i class="fab fa-github"></i>
       </a></li>
     </ul>`
 }
