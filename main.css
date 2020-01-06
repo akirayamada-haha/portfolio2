@@ -25,6 +25,11 @@ header {
   margin-bottom: 50px;
 }
 
+fieldset {
+  border: 0;
+}
+
+
 nav, footer {
   padding: 1% 0;
   background-color: #aaa;
