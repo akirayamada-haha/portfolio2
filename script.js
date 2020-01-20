@@ -28,7 +28,7 @@ function generateProjectHTML() {
     <p class="app-description">A series of multiple choice questions centered around working out. The score and question count are 
     calculated automatically, as well as relevent feedback to each answer submitted. I created this app to demonstrate my abilities with jQuery, 
     and it is for anyone interested in fitness! <p>
-    <a href="https://github.com/Quiz-App"><i class="fab fa-github"></br>Click here to checkout the GitHub repository!</i>`
+    <a href="https://github.com/EvanPoe?tab=repositories" target="_blank"><i class="fab fa-github"></br>Click here to checkout my GitHub repositories!</i>`
 }
 
 function renderProjectHTML() {
