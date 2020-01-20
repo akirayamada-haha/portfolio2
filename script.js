@@ -8,6 +8,16 @@ function readyEventListeners() {
 
 function generateProjectHTML() {
   return `<h2>My Projects</h2>
+    <h4>Parks and Weather Search</h4>
+    <a href="https://evanpoe.github.io/Parks-and-Weather/">Click me</a>
+    <h5>to checkout a live version!</h5>
+    <img class="parks-and-weather" src="./images/ParkScreenshot.PNG"><br>
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <p class="app-description">A site that allows users to search for national parks (making calls to the NPS API) by keyword. Results listed will
+    display basic information, and each provides a link to the particular park's webiste as well as a page for more information. "More Info" will 
+    display just that, as well as asynchronously call to a weather API to display a forecast for that park! <p>
     <h4>Quiz App</h4>
     <a href="https://evanpoe.github.io/Quiz-App/">Click me</a>
     <h5>to checkout a live version!</h5>
@@ -15,7 +25,9 @@ function generateProjectHTML() {
     <i class="fab fa-html5"></i>
     <i class="fab fa-css3-alt"></i>
     <i class="fab fa-js"></i>
-    <p class="app-description">A series of multiple choice questions centered around working out. The score and question count are calculated automatically, as well as relevent feedback to each answer submitted. I created this app to demonstrate my abilities with jQuery, and it is for anyone interested in fitness! <p>
+    <p class="app-description">A series of multiple choice questions centered around working out. The score and question count are 
+    calculated automatically, as well as relevent feedback to each answer submitted. I created this app to demonstrate my abilities with jQuery, 
+    and it is for anyone interested in fitness! <p>
     <a href="https://github.com/Quiz-App"><i class="fab fa-github"></br>Click here to checkout the GitHub repository!</i>`
 }
 
