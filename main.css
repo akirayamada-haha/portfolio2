@@ -9,7 +9,7 @@ body {
   font-size: 20px;
   color: rgb(0, 0, 0);
   background-image: url("./images/High-tech-background-blue-styles-vector-01.png");
-  background-color: #cccccc;
+  background-color: grey;
   text-align: center;
   line-height: 1.5;
   display: flex;
@@ -33,7 +33,7 @@ fieldset {
 
 nav, footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: white;
   opacity: 0.85;
 }
 
@@ -41,7 +41,7 @@ nav, footer {
   font-family: "Roboto", serif;
   padding: 5% 2%;
   min-height: 250px;
-  background-color: #bbb;
+  background-color: white;
   opacity: 0.85;
 }
 
