@@ -9,7 +9,7 @@ function readyEventListeners() {
 function generateProjectHTML() {
   return `<h2>My Projects</h2>
     <h4>Parks and Weather Search</h4>
-    <a href="https://evanpoe.github.io/Parks-and-Weather/">Click me</a>
+    <a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">Click me</a>
     <h5>to checkout a live version!</h5>
     <img class="parks-and-weather" src="./images/ParkScreenshot.PNG"><br>
     <i class="fab fa-html5"></i>
@@ -19,7 +19,7 @@ function generateProjectHTML() {
     display basic information, and each provides a link to the particular park's webiste as well as a page for more information. "More Info" will 
     display just that, as well as asynchronously call to a weather API to display a forecast for that park! <p>
     <h4>Quiz App</h4>
-    <a href="https://evanpoe.github.io/Quiz-App/">Click me</a>
+    <a href="https://evanpoe.github.io/Quiz-App/" target="_blank">Click me</a>
     <h5>to checkout a live version!</h5>
     <img class="quiz-app" src="./images/Quiz-App-Screenshot 2019-11-19 23.55.29.png"><br>
     <i class="fab fa-html5"></i>
