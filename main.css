@@ -61,14 +61,56 @@ li {
 
 .bio-button {
   cursor: pointer;
+  background-color: #191970;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.bio-button:hover {
+  border: 2px solid #800000;
 }
 
 .projects-button {
   cursor: pointer;
+  background-color: #191970;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.projects-button:hover {
+  border: 2px solid #800000;
 }
 
 .contact-button {
   cursor: pointer;
+  background-color: #191970;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.contact-button:hover {
+  border: 2px solid #800000;
 }
 
 .app-description {
