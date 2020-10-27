@@ -5,7 +5,6 @@ Basic rules to write CSS
 - write the css styles to define for the parent (outside) container and THEN the children (inside containers) of that parent and THEN the children (inside containers) of the child above
 */
 
-
 /* -------------------------------------
 CSS reset
 Is a short set of CSS rules that resets the styling of all HTML elements to a consistent baseline so the website will look the same on all browsers
@@ -56,7 +55,6 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
   -o-padding-end: 0px;
 }
 
-
 /* -------------------------------------
 General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
@@ -74,11 +72,15 @@ body {
   border: 3px solid white;
 }
 
-nav, footer {
-  padding: 1% 0;
+a {
+  text-decoration: none;
+}
+
+nav,
+footer {
+  padding: 10px;
   background-color: white;
-  opacity: 0.85;
-  border-radius: 15px 50px;
+  opacity: 0.8;
 }
 
 /* -------------------------------------
@@ -104,23 +106,55 @@ header {
   -o-background-size: cover;
 }
 
-header nav fieldset .nav-buttons {
-  margin-top: 2px;
-  cursor: pointer;
-  background-color: #191970;
-  border: none;
-  border-radius: 4px;
+header h1 {
   color: white;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-top: 10%;
+  font-size: 214%;
 }
 
-header nav fieldset .nav-buttons:hover {
-  border: 2px solid #800000;
+header nav {
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  text-align: left;
+}
+
+header nav ul.nav-items,
+header nav div.logo {
+  display: inline-block;
+  width: auto;
+}
+
+header nav div.logo {
+  padding: 0px 20px;
+  color: #163a8b;
+  font-family: "Caveat", cursive;
+  font-size: 155%;
+}
+
+header nav ul.nav-items {
+  list-style-type: none;
+  float: right;
+}
+
+header nav ul.nav-items li {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  border-right: 2px solid #ddd;
+}
+
+header nav ul.nav-items li:last-child {
+  border-right: 0;
+}
+
+header nav ul.nav-items li a {
+  color: #163a8b;
+}
+
+header nav ul.nav-items li a:hover {
+  color: #525092;
 }
 
 /* -------------------------------------
@@ -184,55 +218,54 @@ Responsive styles
 place all the mobile tables styles below this line
 */
 
-
 /*large desktop*/
 @media only screen and (max-width: 1600px) {
   body {
-      border: 3px solid yellow;
+    border: 3px solid yellow;
   }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (max-width: 1024px) {
   body {
-      border: 3px solid blue;
+    border: 3px solid blue;
   }
 }
 
 /*iPad potrait*/
 @media only screen and (max-width: 768px) {
   body {
-      border: 3px solid red;
+    border: 3px solid red;
   }
-  main, footer {
+  main,
+  footer {
     border-radius: 15px 50px;
   }
   header > nav {
     border-radius: 15px 50px;
-  
   }
   .project-image {
-    width: 85%; 
+    width: 85%;
   }
 }
 
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
   body {
-      border: 3px solid brown;
+    border: 3px solid brown;
   }
 }
 
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
   body {
-      border: 3px solid green;
+    border: 3px solid green;
   }
 }
 
 /*iPhone portrait*/
 @media only screen and (max-width: 320px) {
   body {
-      border: 3px solid purple;
+    border: 3px solid purple;
   }
 }
