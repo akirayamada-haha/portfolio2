@@ -162,43 +162,104 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
-main.container {
+section {
+  width: 70%;
+  margin: 30px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid green;
+  text-align: left;
   font-family: "Roboto", serif;
-  padding: 5% 2%;
-  min-height: 250px;
-  background-color: white;
-  opacity: 0.85;
-  border-radius: 15px 50px;
 }
 
-body header nav form fieldset {
-  border: 0;
+section h2 {
+  font-size: 130%;
+  margin-bottom: 20px;
 }
 
-main.container div.project-container {
+section.about {
+}
+
+section.about h2 img.about-me-image {
+  float: right;
+  margin-right: 20px;
+  width: 32%;
+}
+
+section.about p.bio {
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+section.skills div.logo-container figure.figure-skills {
+  display: inline-block;
+  width: 22%;
+  text-align: center;
+  padding: 2%;
+  margin: 1%;
+}
+
+section.skills div.logo-container figure.figure-skills img {
+  width: 100%;
+}
+
+section.projects {
+  display: block;
+}
+
+section.projects div.project-container {
   margin-bottom: 5%;
+  margin-top: 2%;
+  border-bottom: 1px solid #eee;
 }
 
-main.container div.project-container .project-image {
+section.projects div.project-container h4 {
+  margin-bottom: 15px;
+}
+
+section.projects div.project-container div.project-column {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+section.projects div.project-container div.project-column img {
+  width: 100%;
+}
+
+section.project div.project-container .project-image {
   width: 65%;
   min-width: 280px;
 }
 
-main div.project-container .app-description {
+section.project div.project-container .app-description {
   text-align: center;
   padding: 5%;
 }
 
-main p.bio {
-  text-align: center;
-}
-/* should be specific ex: footer.fab  */
-main.container div.project-container .fab {
+
+section.project div.project-container .fab {
   font-size: x-large;
 }
 
-main.container div.project-container .fas {
+section.project div.project-container .fas {
   margin-bottom: 5%;
+}
+
+section.contact {
+  text-align: center;
+}
+
+section.contact h2 {
+  text-align: left;
+}
+
+section.contact h4 {
+  display: inline-block;
 }
 
 /* -------------------------------------

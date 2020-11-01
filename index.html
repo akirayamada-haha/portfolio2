@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -18,16 +19,19 @@
             <div class="logo">Evan Poe</div>
             <ul class="nav-items">
                 <li>
-                    <a href="#top">Home</a>
+                    <a href="#top"><i class="fa fa-home clickables"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#bio">Bio</a>
+                    <a href="#bio"><i class="fas fa-user-circle"></i> About</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#skills"><i class="fa fa-cog"></i> Skills</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#projects"><i class="fa fa-briefcase"></i> Projects</a>
+                </li>
+                <li>
+                    <a href="#contact"><i class="fa fa-envelope"></i> Contact</a>
                 </li>
             </ul>
         </nav>
@@ -35,13 +39,15 @@
     </header>
 
 
-    <section class="container">
+    <section class="about">
         <a name="bio"></a>
-        <h2>About</h2>
+        <h2><i class="fas fa-user-circle"></i> About
+            <img class="about-me-image" src="images/About-me-image.jpg" />
+        </h2>
         <p class="bio">
             As a lifelong learner, I love coding because it constantly challenges me to push the boundaries of my
             knowledge.
-            When coding, I’m continually thinking of optimization and stability.
+            When coding, I’m continually thinking of efficiency, optimization and stability.
         </p>
         <p class="bio">
             I have spent the last decade as a personal trainer developing attention to detail, problem-solving skills
@@ -51,70 +57,148 @@
         <p class="bio">
             Contact me and let’s talk code… or fitness!
         </p>
-        <form class="submit-buttons">
-            <input type="submit" class="projects-button" value="Projects">
-            <input type="submit" class="contact-button" value="Contact Me">
-        </form>
     </section>
 
-
+    <section class="skills" id="skills">
+        <h2><i class="fa fa-cog"></i> Skills</h2>
+        <div class="logo-container">
+            <figure class="figure-skills">
+                <img class="logo html" src="images/iconfinder_HTML.png" alt="html logo">
+                <figcaption>HTML 5</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/iconfinder_css3.png" alt="css logo">
+                <figcaption>CSS 3</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" style="margin-left: 0;" src="images/128px-JavaScript-logo.png" alt="JavaScript logo">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/iconfinder_JQuery.png" alt="jQuery logo">
+                <figcaption>JQuery</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/iconfinder_React.js.png" alt="react logo">
+                <figcaption>React.js</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/iconfinder_Node_Js.png" alt="node logo">
+                <figcaption>Node.js</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/express-logo.png" alt="express logo">
+                <figcaption>Express</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/heroku-logo.png" alt="heroku logo">
+                <figcaption>Heroku</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/mocha-logo.png" alt="mocha logo">
+                <figcaption>Mocha</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/chai-logo.png" alt="chai logo">
+                <figcaption>Chai</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/postgres-logo.png" alt="postgres logo">
+                <figcaption>Postgres</figcaption>
+            </figure>
+            <figure class="figure-skills">
+                <img class="logo" src="images/github-logo.png" alt="github logo">
+                <figcaption>Github</figcaption>
+            </figure>
+        </div>
+    </section>
 
 
     <section class="projects">
         <a name="projects"></a>
-        <h2>My Projects</h2>
+        <h2><i class="fa fa-briefcase"></i> Projects</h2>
 
         <div class="parks-container project-container">
-            <h4>Parks and Weather Search</h4>
-            <a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">Click me</a>
-            <h5>to checkout a live version!</h5>
-            <img class="parks-and-weather project-image" src="./images/ParkScreenshot.PNG"><br>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <p class="app-description">A site that allows users to search for national parks (making calls to the NPS
-                API) by
-                keyword. Results listed will
-                display basic information, and each provides a link to the particular park's webiste as well as a page
-                for more
-                information. "More Info" will
-                display just that, as well as asynchronously call to a weather API to display a forecast for that park!
-            <p>
+            <div class="project-column">
+                <a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">
+                    <img class="parks-and-weather project-image" src="./images/ParkScreenshot.PNG"
+                        alt="Search for national parks">
+                </a>
+            </div>
+
+            <div class="project-column">
+                <h4>Parks and Weather Search</h4>
+                <h5><a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">Click me</a> to checkout a
+                    live
+                    version!</h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <p class="app-description">A site that allows users to search for national parks (making calls to the
+                    NPS
+                    API) by
+                    keyword. Results listed will
+                    display basic information, and each provides a link to the particular park's webiste as well as a
+                    page
+                    for more
+                    information. "More Info" will
+                    display just that, as well as asynchronously call to a weather API to display a forecast for that
+                    park!
+                <p>
+            </div>
+
         </div>
 
-        <i class="fas fa-bookmark"></i>
+        <!-- <i class="fas fa-bookmark"></i> -->
 
         <div class="quiz-container project-container">
-            <h4>Quiz App</h4>
-            <a href="https://evanpoe.github.io/Quiz-App/" target="_blank">Click me</a>
-            <h5>to checkout a live version!</h5>
-            <img class="quiz-app project-image" src="./images/Quiz-App-Screenshot 2019-11-19 23.55.29.png"><br>
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <p class="app-description">A series of multiple choice questions centered around working out. The score and
-                question count are
-                calculated automatically, as well as relevent feedback to each answer submitted. I created this app to
-                demonstrate my abilities with jQuery,
-                and it is for anyone interested in fitness!
-            <p>
+            <div class="project-column">
+                <a href="https://evanpoe.github.io/Quiz-App/" target="_blank">
+                    <img class="quiz-app project-image" src="./images/Quiz-App-Screenshot 2019-11-19 23.55.29.png"
+                        alt="Take a workout quiz">
+                </a>
+            </div>
+
+            <div class="project-column">
+                <h4>Quiz App</h4>
+                <h5><a href="https://evanpoe.github.io/Quiz-App/" target="_blank">Click me</a> to checkout a live
+                    version!
+                </h5>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <p class="app-description">A series of multiple choice questions centered around working out. The score
+                    and
+                    question count are
+                    calculated automatically, as well as relevent feedback to each answer submitted. I created this app
+                    to
+                    demonstrate my abilities with jQuery,
+                    and it is for anyone interested in fitness!
+                <p>
+            </div>
+
         </div>
 
-        <a href="https://github.com/EvanPoe?tab=repositories" target="_blank"><i class="fab fa-github"></br>Click here
-                to
-                checkout my GitHub repositories!</i>
     </section>
 
     <section class="contact">
         <a name="contact"></a>
-        <h3>Contact Information</h3>
-        <h4>Evan Poe</h4>
-        <h4><a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">evanpoe91@yahoo.com</a>
+        <h2><i class="fa fa-envelope"></i> Contact</h2>
+        <h4>
+            <a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">
+                <i class="fa fa-envelope"></i>
+            </a>
         </h4>
-        <h4><a href="https://www.linkedin.com/in/evan-poe-016375a5/" target="_blank"><i class="fab fa-linkedin"></i>
-            </a></h4>
-        <h4><a href="https://github.com/EvanPoe" target="_blank"><i class="fab fa-github"></i>
-            </a></h4>
+        <h4>
+            <a href="https://www.linkedin.com/in/evan-poe-016375a5/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </h4>
+        <h4>
+            <a href="https://github.com/EvanPoe" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </h4>
     </section>
 
 
