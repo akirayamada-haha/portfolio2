@@ -76,8 +76,7 @@ a {
   text-decoration: none;
 }
 
-nav,
-footer {
+nav {
   padding: 10px;
   background-color: white;
   opacity: 0.8;
@@ -254,12 +253,15 @@ section.contact {
   text-align: center;
 }
 
-section.contact h2 {
-  text-align: left;
+section.contact ul.contact-list li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-section.contact h4 {
-  display: inline-block;
+section.contact ul.contact-list li a i {
+  font-size: x-large;
 }
 
 /* -------------------------------------
@@ -269,7 +271,15 @@ Footer styles (Main Module)
 
 footer {
   margin-top: 50px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
+  border: 0px;
+}
+
+footer a i.far {
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 130px;
 }
 
 /* -------------------------------------
