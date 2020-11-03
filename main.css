@@ -258,12 +258,21 @@ section.projects div.project-container div.project-column ul.project-buttons {
   list-style-type: none;
 }
 
-section.projects div.project-container div.project-column ul.project-buttons li {
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-buttons
+  li {
   display: inline-block;
   width: auto;
 }
 
-section.projects div.project-container div.project-column ul.project-buttons li a {
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-buttons
+  li
+  a {
   display: block;
   width: 100%;
   padding: 10px 20px;
@@ -274,8 +283,13 @@ section.projects div.project-container div.project-column ul.project-buttons li 
   text-decoration: none;
 }
 
-section.projects div.project-container div.project-column ul.project-buttons li a:hover {
-  background-color: #081E6F;
+section.projects
+  div.project-container
+  div.project-column
+  ul.project-buttons
+  li
+  a:hover {
+  background-color: #081e6f;
 }
 
 section.project div.project-container .project-image {
@@ -287,7 +301,6 @@ section.project div.project-container .app-description {
   text-align: center;
   padding: 5%;
 }
-
 
 section.project div.project-container .fab {
   font-size: x-large;
@@ -306,7 +319,7 @@ section.contact ul.contact-list li {
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 120%
+  font-size: 120%;
 }
 
 section.contact ul.contact-list li a {
@@ -314,7 +327,7 @@ section.contact ul.contact-list li a {
 }
 
 section.contact ul.contact-list li a:hover {
-  color: #081E6F;
+  color: #081e6f;
 }
 
 /* -------------------------------------
@@ -337,7 +350,7 @@ footer a i.far {
 }
 
 footer a:hover i.far {
-  color: #081E6F
+  color: #081e6f;
 }
 
 /* -------------------------------------
@@ -359,6 +372,24 @@ place all the mobile tables styles below this line
   body {
     border: 3px solid blue;
   }
+
+  header nav ul.nav-items li {
+    padding: 5px 10px;
+  }
+
+  header h1 {
+    margin-top: 20%;
+    font-size: 200%;
+  }
+
+  section {
+    width: 85%;
+  }
+
+  section.projects {
+    display: block;
+    font-size: 90%;
+  }
 }
 
 /*iPad potrait*/
@@ -366,15 +397,27 @@ place all the mobile tables styles below this line
   body {
     border: 3px solid red;
   }
-  main,
-  footer {
-    border-radius: 15px 50px;
+
+  header {
+    height: 500px;
   }
-  header > nav {
-    border-radius: 15px 50px;
+
+  header nav ul.nav-items li span {
+    display: none;
   }
-  .project-image {
-    width: 85%;
+
+  section {
+    width: 95%;
+  }
+
+  section.projects div.project-container div.project-column {
+    display: block;
+    width: 99%;
+  }
+
+  footer a i.far {
+    bottom: 5px;
+    right: 5px;
   }
 }
 
@@ -383,12 +426,44 @@ place all the mobile tables styles below this line
   body {
     border: 3px solid brown;
   }
+
+  header h1 {
+    font-size: 175%;
+  }
+
+  footer a i.far {
+    display: none;
+  }
 }
 
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
   body {
     border: 3px solid green;
+  }
+
+  header h1 {
+    font-size: 150%;
+    margin-top: 30%;
+  }
+
+  header nav ul.nav-items {
+    float: none;
+  }
+  header nav ul.nav-items,
+  header nav div.logo {
+    display: block;
+    text-align: center;
+  }
+
+  section.about h2 img.about-me-image {
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+  section.skills div.logo-container figure.figure-skills {
+    width: 45%;
   }
 }
 
