@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <title>Evan Poe - Full-stack developer - Portfolio</title>
+    <title>Evan Poe - Full Stack Developer - Portfolio</title>
 
 
-    <meta name="title" content="Evan Poe - Full-stack developer - Portfolio">
+    <meta name="title" content="Evan Poe - Full Stack Developer - Portfolio">
     <meta name="description"
         content="As a lifelong learner, I love coding because it constantly challenges me to push the boundaries of my knowledge.">
     <meta name="keywords"
@@ -22,45 +22,64 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="print.css" rel="stylesheet" media="print">
 </head>
 
 <body>
     <header>
         <a name="top"></a>
-        <nav role="navigation">
+        <nav role="navigation" class="clearfix">
             <div class="logo">Evan Poe</div>
             <ul class="nav-items">
-                <li>
+                <li class="show-web-only">
                     <a href="#top">
                         <i class="fa fa-home clickables"></i> 
                         <span>Home</span>
                     </a>
                 </li>
-                <li>
+                <li class="show-web-only">
                     <a href="#bio">
                         <i class="fas fa-user-circle"></i> 
                         <span>About</span>
                     </a>
                 </li>
-                <li>
+                <li class="show-web-only">
                     <a href="#skills">
                         <i class="fa fa-cog"></i> 
                         <span>Skills</span>
                     </a>
                 </li>
-                <li>
+                <li class="show-web-only">
                     <a href="#projects">
                         <i class="fa fa-briefcase"></i> 
                         <span>Projects</span>
                     </a>
                 </li>
-                <li>
+                <li class="show-web-only">
                     <a href="#contact">
                         <i class="fa fa-envelope"></i> 
                         <span>Contact</span>
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="https://evanpoe.github.io/portfolio/">Portfolio Page: evanpoe.github.io/portfolio/
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">
+                        <i class="fas fa-envelope"></i> EvanPoe91@yahoo.com
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="https://github.com/EvanPoe">
+                        <i class="fab fa-github"></i> GitHub.com/EvanPoe
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="https://www.linkedin.com/in/evan-poe-016375a5/">
+                        <i class="fab fa-linkedin"></i> LinkedIn.com/in/evan-poe-016375a5/
                     </a>
                 </li>
             </ul>
@@ -69,10 +88,10 @@
     </header>
 
 
-    <section class="about">
+    <section class="about clearfix">
         <a name="bio"></a>
         <h2><i class="fas fa-user-circle"></i> About
-            <img class="about-me-image" src="images/About-me-image.jpg" />
+            <img class="about-me-image" src="images/about-me-images/about-me-image-cropped.jpg" />
         </h2>
         <p class="bio">
             As a lifelong learner, I love coding because it constantly challenges me to push the boundaries of my
@@ -159,9 +178,64 @@
             </div>
 
             <div class="project-column">
+                <h4>Workout Planner</h4>
+                <p class="app-description">
+                    A site that allows users to build workouts according to difficulty and type.
+                    <span class="show-web-only">
+                        Users can create an account, add, delete, and view workouts which are saved to their profile on the server.
+                    </span>
+                </p>
+                <ul class="project-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node</li>
+                    <li>Postgres</li>
+                    <li>Heroku</li>
+                    <li>Vercel</li>
+                </ul>
+                <ul class="project-buttons show-web-only">
+                    <li>
+                        <a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">
+                            <i class="fas fa-desktop"></i>
+                            Demo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/EvanPoe/workout-planner-capstone-client" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </li>                    
+                </ul>
+                <ul class="project-buttons show-print-only">
+                    <li>
+                        <i class="fas fa-desktop"></i> https://evanpoe.github.io/Parks-and-Weather/
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> https://github.com/EvanPoe/workout-planner-capstone-client
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="parks-container project-container">
+            <div class="project-column">
+                <a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">
+                    <img class="parks-and-weather project-image" src="./images/national-parks.png" alt="Search for national parks">
+                </a>
+            </div>
+
+            <div class="project-column">
                 <h4>Parks and Weather Search</h4>
                 <p class="app-description">
-                    A site that allows users to search for national parks (making calls to the NPS API) by keyword. Results listed will display basic information, and each provides a link to the particular park's webiste as well as a page for more information. "More Info" will display just that, as well as asynchronously call to a weather API to display a forecast for that park!
+                    A site that allows users to search for national parks (making calls to the NPS API) by keyword.
+                    <span class="show-web-only">
+                        Results listed will display basic information, and each provides a link to the particular park's webiste as well as a page for more information. "More Info" will display just that, as well as asynchronously call to a weather API to display a forecast for that park!
+                    </span>
                 </p>
                 <ul class="project-skills">
                     <li>HTML</li>
@@ -170,7 +244,7 @@
                     <li>jQuery</li>
                     <li>API</li>
                 </ul>
-                <ul class="project-buttons">
+                <ul class="project-buttons show-web-only">
                     <li>
                         <a href="https://evanpoe.github.io/Parks-and-Weather/" target="_blank">
                             <i class="fas fa-desktop"></i>
@@ -183,6 +257,14 @@
                             Code
                         </a>
                     </li>                    
+                </ul>
+                <ul class="project-buttons show-print-only">
+                    <li>
+                        <i class="fas fa-desktop"></i> https://evanpoe.github.io/Parks-and-Weather/
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> https://github.com/EvanPoe/Parks-and-Weather/
+                    </li>
                 </ul>
             </div>
 
@@ -200,7 +282,10 @@
             <div class="project-column">
                 <h4>Quiz App</h4>
                 <p class="app-description">
-                    A series of multiple choice questions centered around working out. The score and question count are calculated automatically, as well as relevent feedback to each answer submitted. I created this app to demonstrate my abilities with jQuery, and it is for anyone interested in fitness!
+                    A series of multiple choice questions centered around working out. 
+                    <span class="show-web-only">
+                        The score and question count are calculated automatically, as well as relevent feedback to each answer submitted. I created this app to demonstrate my abilities with jQuery, and it is for anyone interested in fitness!
+                    </span>
                 </p>
                 <ul class="project-skills">
                     <li>HTML</li>
@@ -208,7 +293,7 @@
                     <li>JavaScript</li>
                     <li>jQuery</li>
                 </ul>
-                <ul class="project-buttons">
+                <ul class="project-buttons show-web-only">
                     <li>
                         <a href="https://evanpoe.github.io/Quiz-App/" target="_blank">
                             <i class="fas fa-desktop"></i>
@@ -221,6 +306,14 @@
                             Code
                         </a>
                     </li>                    
+                </ul>
+                <ul class="project-buttons show-print-only">
+                    <li>
+                        <i class="fas fa-desktop"></i> https://evanpoe.github.io/Quiz-App/
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> https://github.com/EvanPoe/Quiz-App
+                    </li>
                 </ul>
             </div>
 
