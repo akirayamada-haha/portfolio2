@@ -69,7 +69,7 @@ body {
   text-align: center;
   line-height: 1.5;
   height: auto;
-  border: 3px solid white;
+  /* border: 3px solid white; */
 }
 
 .clearfix::after {
@@ -176,7 +176,7 @@ section {
   margin: 30px auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 2px solid green;
+  /* border-bottom: 2px solid green; */
   text-align: left;
   font-family: "Roboto", serif;
 }
@@ -184,6 +184,7 @@ section {
 section h2 {
   font-size: 130%;
   margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
 }
 
 section.about {
@@ -326,6 +327,10 @@ section.contact {
   text-align: center;
 }
 
+section.contact ul {
+  font-size: 150%;
+}
+
 section.contact ul.contact-list li {
   list-style-type: none;
   display: inline-block;
@@ -353,6 +358,10 @@ footer {
   border: 0px;
 }
 
+footer h4 {
+  font-size: 75%;
+}
+
 footer a i.far {
   display: block;
   position: fixed;
@@ -375,14 +384,14 @@ place all the mobile tables styles below this line
 /*large desktop*/
 @media only screen and (max-width: 1600px) {
   body {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
   }
 }
 
 /*iPad lanscape / small laptop*/
 @media only screen and (max-width: 1024px) {
   body {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
   }
 
   header nav ul.nav-items li {
@@ -407,7 +416,7 @@ place all the mobile tables styles below this line
 /*iPad potrait*/
 @media only screen and (max-width: 768px) {
   body {
-    border: 3px solid red;
+    /* border: 3px solid red; */
   }
 
   header {
@@ -436,7 +445,7 @@ place all the mobile tables styles below this line
 /*Android landscape*/
 @media only screen and (max-width: 640px) {
   body {
-    border: 3px solid brown;
+    /* border: 3px solid brown; */
   }
 
   header h1 {
@@ -451,7 +460,7 @@ place all the mobile tables styles below this line
 /*iPhone landscape*/
 @media only screen and (max-width: 480px) {
   body {
-    border: 3px solid green;
+    /* border: 3px solid green; */
   }
 
   header h1 {
@@ -482,6 +491,6 @@ place all the mobile tables styles below this line
 /*iPhone portrait*/
 @media only screen and (max-width: 320px) {
   body {
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
   }
 }
