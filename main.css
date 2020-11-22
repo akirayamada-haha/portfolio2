@@ -86,12 +86,6 @@ a {
   text-decoration: none;
 }
 
-nav {
-  padding: 10px;
-  background-color: white;
-  opacity: 0.8;
-}
-
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -127,6 +121,9 @@ header nav {
   width: 100%;
   top: 0;
   text-align: left;
+  padding: 10px;
+  background-color: white;
+  opacity: 0.8;
 }
 
 header nav ul.nav-items,
