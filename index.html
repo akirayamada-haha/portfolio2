@@ -13,7 +13,6 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
-    <!-- <meta charset="UTF-8"> -->
     <meta name="revisit-after" content="3 days">
     <meta name="author" content="Evan Poe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -21,16 +20,16 @@
 
 
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="print.css" rel="stylesheet" media="print">
 </head>
 
 <body>
-    <header>
-        <a name="top"></a>
-        <nav role="navigation" class="clearfix">
+    <header id="top">
+        <nav class="clearfix">
             <div class="logo">Evan Poe</div>
             <ul class="nav-items">
                 <li class="show-web-only">
@@ -88,10 +87,9 @@
     </header>
 
 
-    <section class="about clearfix">
-        <a name="bio"></a>
+    <section class="about clearfix" id="bio">
         <h2><i class="fas fa-user-circle"></i> About
-            <img class="about-me-image" src="images/about-me-images/about-me-image-cropped.jpg" />
+            <img class="about-me-image" src="images/about-me-images/about-me-image-cropped.jpg" alt="Evan" />
         </h2>
         <p class="bio">
             As a lifelong learner, I love coding because it constantly challenges me to push the boundaries of my
@@ -163,8 +161,7 @@
     </section>
 
 
-    <section class="projects">
-        <a name="projects"></a>
+    <section class="projects" id="projects">
         <h2>
             <i class="fa fa-briefcase"></i> 
             Projects
@@ -323,7 +320,6 @@
 
         </div>
 
-        <!-- <i class="fas fa-bookmark"></i> -->
 
         <div class="quiz-container project-container">
             <div class="project-column">
@@ -374,9 +370,7 @@
 
     </section>
 
-    <section class="contact">
-        <a name="contact"></a>
-        <!-- <h2><i class="fa fa-envelope"></i> Contact</h2> -->
+    <section class="contact" id="contact">
         <ul class="contact-list">
             <li>
                 <a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">
@@ -419,7 +413,7 @@
     </script>
 
     <!-- Begin Inspectlet Asynchronous Code -->
-    <script type="text/javascript">
+    <script>
         (function () {
             window.__insp = window.__insp || [];
             __insp.push(['wid', 1680503485]);
