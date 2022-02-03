@@ -243,6 +243,7 @@ section.projects div.project-container div.project-column {
 
 section.projects div.project-container div.project-column img {
   width: 100%;
+  margin-top: 3%;
 }
 
 section.projects div.project-container div.project-column ul.project-skills {
