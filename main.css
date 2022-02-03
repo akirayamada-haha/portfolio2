@@ -213,6 +213,110 @@ section.skills div.logo-container figure.figure-skills img {
   width: 100%;
 }
 
+section.work {
+  display: block;
+}
+
+section.work div.work-container {
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-bottom: 1px solid #ccc;
+}
+
+section.work div.work-container:last-child {
+  border-bottom: 0;
+}
+
+section.work div.work-container h4 {
+  margin-bottom: 15px;
+  font-size: 120%;
+}
+
+section.work div.work-container div.work-column {
+  display: inline-block;
+  width: 48%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+section.work div.work-container div.work-column img {
+  width: 100%;
+  margin-top: 3%;
+}
+
+section.work div.work-container div.work-column ul.work-skills {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+  font-size: 80%;
+}
+
+section.work div.work-container div.work-column ul.work-skills li {
+  display: inline-block;
+  width: auto;
+  padding: 5px 10px;
+  margin-top: 3px;
+  border: 1px solid #ddd;
+}
+
+section.work div.work-container div.work-column ul.work-buttons {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+section.work
+  div.work-container
+  div.work-column
+  ul.work-buttons
+  li {
+  display: inline-block;
+  width: auto;
+}
+
+section.work
+  div.work-container
+  div.work-column
+  ul.work-buttons
+  li
+  a {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #163a8b;
+  color: white;
+  text-decoration: none;
+}
+
+section.work
+  div.work-container
+  div.work-column
+  ul.work-buttons
+  li
+  a:hover {
+  background-color: #081e6f;
+}
+
+section.work div.work-container .work-image {
+  width: 65%;
+  min-width: 280px;
+}
+
+section.work div.work-container .fab {
+  font-size: x-large;
+}
+
+section.work div.work-container .fas {
+  margin-bottom: 5%;
+}
 section.projects {
   display: block;
 }
@@ -310,11 +414,6 @@ section.project div.project-container .project-image {
   min-width: 280px;
 }
 
-section.project div.project-container .app-description {
-  text-align: center;
-  padding: 5%;
-}
-
 section.project div.project-container .fab {
   font-size: x-large;
 }
@@ -407,6 +506,10 @@ place all the mobile tables styles below this line
     width: 85%;
   }
 
+  section.work {
+    display: block;
+    font-size: 90%;
+  }
   section.projects {
     display: block;
     font-size: 90%;
@@ -431,6 +534,10 @@ place all the mobile tables styles below this line
     width: 95%;
   }
 
+  section.work div.work-container div.work-column {
+    display: block;
+    width: 99%;
+  }
   section.projects div.project-container div.project-column {
     display: block;
     width: 99%;
