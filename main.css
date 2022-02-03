@@ -190,6 +190,7 @@ section.about {
 section.about h2 img.about-me-image {
   float: right;
   margin-right: 20px;
+  margin-left: 5px;
   width: 32%;
   border-radius: 15px;
   border: 1px solid #081e6f;
