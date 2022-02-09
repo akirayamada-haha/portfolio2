@@ -601,3 +601,25 @@ place all the mobile tables styles below this line
     /* border: 3px solid purple; */
   }
 }
+
+@media print { 
+  /* All print styles */
+  #header, #footer, #nav { display: none !important; } 
+
+  section.work div.work-container div.work-column {
+    width: 100%;
+  }
+
+  section.work div.work-container div.work-column ul.work-buttons li {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  section.projects div.project-container div.project-column {
+    width: 100%;
+  }
+
+  section.projects div.project-container div.project-column ul.project-buttons li {
+    display: block;
+  }
+ }
