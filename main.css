@@ -135,7 +135,7 @@ header nav div.logo {
 header nav div.logo {
   padding: 0px 20px;
   color: #163a8b;
-  font-family: "Caveat", cursive;
+  font-family: "Roboto Slab";
   font-size: 155%;
 }
 
@@ -588,6 +588,7 @@ place all the mobile tables styles below this line
     float: none;
     width: 100%;
     display: block;
+    margin: auto;
   }
 
   section.skills div.logo-container figure.figure-skills {
