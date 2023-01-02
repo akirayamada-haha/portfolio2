@@ -86,6 +86,16 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-padding-top: 4rem;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
+}
+
 /* -------------------------------------
 Header styles (Main Module)
 (all the styles inside the < header > or < nav > tags)
@@ -117,7 +127,9 @@ header h1 {
 
 header nav {
   position: fixed;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   top: 0;
   text-align: left;
@@ -141,7 +153,7 @@ header nav div.logo {
 
 header nav ul.nav-items {
   list-style-type: none;
-  float: right;
+  margin-left: auto;
 }
 
 header nav ul.nav-items li {
@@ -230,6 +242,11 @@ section.work div.work-container:last-child {
 section.work div.work-container h4 {
   margin-bottom: 15px;
   font-size: 120%;
+}
+
+section.work p.app-description a {
+  color:rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 section.work div.work-container div.work-column {
@@ -575,13 +592,16 @@ place all the mobile tables styles below this line
     margin-top: 30%;
   }
 
-  header nav ul.nav-items {
-    float: none;
+  header nav {
+    flex-wrap: wrap;
   }
-  header nav ul.nav-items,
-  header nav div.logo {
-    display: block;
-    text-align: center;
+
+  header nav .logo {
+    margin: auto
+  }
+
+  header nav .nav-items {
+    margin: auto
   }
 
   section.about h2 img.about-me-image {
